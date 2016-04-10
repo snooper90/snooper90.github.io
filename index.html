@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class='option_overlay hide'><!-- option overlay -->
+    <div class="options">
+      <span id="close_option_btn">
+        <i class="fa fa-angle-double-left"></i>
+      </span>
+
+        <div class="wins_option option_group">
+          <p>Number of Players</p>
+          <div class="btn-group btn-group-justified " role="group" aria-label="...">
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">1</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">3</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">5</button>
+            </div>
+          </div>
+        </div><!-- end first btn group -->
+
+        <div class="type_option option_group">
+          <p>Type of game</p>
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">wins</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">loss</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">Random</button>
+            </div>
+          </div>
+        </div><!-- end second btn group -->
+
+        <div class="choose_player option_group">
+          <p>More Options here</p>
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">Left</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">Middle</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default">Right</button>
+            </div>
+          </div>
+        </div><!-- end thrird btn group -->
+
+
+        </div>
+      </span>
+    </div>
+  </div> <!-- end option overlay -->
+  <div id='winOverlay'>
+    <div id="showOnWin">Player 1 won!!!</div>
+  </div><!-- end win overlay -->
+  <header>
+     <span id="open_option_btn">
+        <i class="fa fa-angle-double-right"></i>
+    </span>
+  <!-- center this -->
+    <div class="container">
+      <h1>Name of game </h1>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+  <!-- put options here on left side of screen-->
+  <!--//include # of games
+      //include changing the players figure?
+      //change game mode
+      //add more boards?
+      //make bar collapsable?-->
+  <!--                  -->
+  <div class="container">
+    <div class="row row-eq-height">
+
+
+
+        <div class="figure_1 col-sm-4">
+          <img src="#" alt="player 1">
+          <p> words are here and not there</p>
+        </div> <!-- end figure_1 -->
+
+
+
+        <div class="board col-sm-4">
+          <table id='board'>
+            <tr class="top">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="mid">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="bot">
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+          <div class='winDisplayAll'>
+            <span class='winDisplayLeft'> Player 1 Wins: <span id='p1Wins'></span></span>
+            <span class='winDisplayRight'> Player 2 Wins: <span id="p2Wins"></span></span>
+          </div>
+        </div><!-- end board -->
+
+
+
+        <div class="figure_2 col-sm-4">
+          <img src="#" alt="player 2">
+          <p>there are words there but not here</p>
+        </div><!-- end figure_2 -->
+
+
+      </div> <!-- end row -->
+    </div> <!-- end container-->
+  </main>
+  <footer class="container">
+<!-- maybe put a coppyright or extra instructions that might be needed -->
+    <h3>This is how you play. </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorem tempora dignissimos consequatur impedit velit magni inventore, voluptate dicta, corporis enim quis. Dignissimos repellendus quae nihil quas iusto aut suscipit.</p>
+<!--                             -->
+
+  </footer>
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src"js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
