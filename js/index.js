@@ -152,7 +152,7 @@ function showWinner(){
   //display winner
   $winOverlay.show(500);
   //hide display after
-  $winOverlay.delay(1500).hide(1000);
+  $winOverlay.delay(1000).hide(1000);
 }
 $().ready(function(){
   updateScore();
