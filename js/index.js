@@ -136,7 +136,6 @@ $().ready(function(){
 });
 
 function onWin(winner){
-  var $winOverlay = $('#winOverlay');
   var $winMessage = $('#showOnWin');
 //set the winning message to show the winner
   if(winner === "X"){
@@ -146,10 +145,12 @@ function onWin(winner){
   }else{
     $winMessage.text("Tie!");
   };
+  showWinner();
 };
 function showWinner(){
+  var $winOverlay = $('#winOverlay');
   //display winner
-  $winOverlay.show(400);
+  $winOverlay.show(500);
   //hide display after
   $winOverlay.delay(1500).hide(1000);
 }
